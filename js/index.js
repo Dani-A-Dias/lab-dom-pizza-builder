@@ -82,14 +82,14 @@ function renderGlutenFreeCrust() {
     if (state.glutenFreeCrust) {
       crust.classList.add("crust-gluten-free");
     } else {
-      crust.classList.add("crust-gluten-free");
+      crust.classList.remove("crust-gluten-free");
     }
   });
 }
 
 function renderButtons() {
   // Iteration 3: add/remove the class "active" of each `<button class="btn">`
-  document.querySelectorAll("button.btn").forEach((actvBtn)=>{
+  document.querySelectorAll(".btn").forEach((actvBtn)=>{
     if(actvBtn.classList.contains("active")){
       actvBtn.classList.remove("active");
     } else{
